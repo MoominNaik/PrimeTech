@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+
+/* Services Section */
+.services-section {
+    
+    text-align: center;
+    margin: 290px 0px;
+    width: 100%;
+    max-width: auto;
+    margin-inline: auto;
+
+}
+
+.services-section h1 {
+    line-height: 1.2;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222;
+    font-weight: 800;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+}
+
+.services-container {
+    background: #f0f0f0;
+    width: 100%;
+    max-width: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 50px 20px;
+
+
+}
+
+.service-card {
+    background: url('../Assets/serviceCard.jpg') no-repeat center center;
+    background-size: cover;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 40px 35px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: grey;
+    font-family: 'Oswald', sans-serif;
+}

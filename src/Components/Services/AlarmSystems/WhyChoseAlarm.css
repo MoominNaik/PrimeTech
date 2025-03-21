@@ -1,0 +1,163 @@
+/* Container Styling with Animation */
+.opener-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    color: #333;
+    max-width: auto;
+    margin-inline: auto;
+    margin-bottom: 200px;
+    
+    /* Animation on load */
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* Left Section Styling */
+.opener-left {
+    background-color: #f0f0f0;
+    width: 40%;
+    color: #b30000; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.8px;
+    border-right: 2px solid #ccc;
+    padding: 60px; /* Increased padding for taller height */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+    /* Subtle hover animation */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.opener-left:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Section Text */
+.opener-left h2 {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    /* Text animation */
+    animation: textSlideIn 1.2s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Right Section Styling */
+.opener-right {
+    background-color: #f0f0f0;
+    width: 60%;
+    padding: 40px;
+    animation: slideInRight 1.2s ease-out forwards;
+    opacity: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Heading Animation */
+
+
+/* Icon List Styling */
+.opener-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* List Items with Animation */
+.opener-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    color: black;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: listFadeIn 1s ease-in-out forwards;
+}
+.opener-item p{
+    margin-bottom: 0px;
+}
+.opener-icon {
+    font-size: 24px;
+    color: #007bff;
+    transition: transform 0.3s ease;
+}
+
+/* Icon Hover Animation */
+.opener-item:hover .opener-icon {
+    transform: rotate(15deg) scale(1.2);
+}
+
+/* Hover effect */
+.opener-item:hover {
+    transform: translateX(10px);
+    transition: 0.3s ease;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .opener-container {
+        flex-direction: column;
+    }
+
+    .opener-left, .opener-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .opener-left {
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes listFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

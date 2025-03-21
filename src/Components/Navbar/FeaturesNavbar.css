@@ -1,0 +1,50 @@
+/* Features Navbar - Separate Styling */
+.FeaturesNavbar {
+    width: 100%;
+    background-color: black;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/* Features Navbar Menu */
+.separate-navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 50px; /* Space between items */
+}
+
+/* Dropdown Links */
+.dropdown-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+    font-weight: 400;
+}
+
+.dropdown-link:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .separate-navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .dropdown-link {
+        font-size: 16px;
+    }
+}

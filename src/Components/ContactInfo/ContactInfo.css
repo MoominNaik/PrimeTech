@@ -1,0 +1,30 @@
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background: #f0f0f0;    
+    padding: 45px;
+    margin-bottom: 380px;
+    border: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white; /* White text */
+    font-size: 18px;
+    padding: 15px 20px;
+    border: 2px solid white;
+    transition: transform 0.3s ease, background 0.3s ease;
+    background: #000; /* Black button */
+    color: white;
+}
+
+
+
+.contact-icon {
+    font-size: 22px;
+}
